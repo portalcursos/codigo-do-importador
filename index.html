@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><style type="text/css">.modal-open{overflow:hidden}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:auto;overflow-y:scroll}.modal.fade .modal-dialog{-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);transform:translate(0,-25%);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}.modal-dialog{position:relative;z-index:1050;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;border:1px solid #999;border:1px solid rgba(0,0,0,0.2);border-radius:6px;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);box-shadow:0 3px 9px rgba(0,0,0,0.5);background-clip:padding-box}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1030;background-color:#000}.modal-backdrop.fade{opacity:0;filter:alpha(opacity=0)}.modal-backdrop.in{opacity:.5;filter:alpha(opacity=50)}.modal-header{min-height:16.428571429px;padding:15px;border-bottom:1px solid #e5e5e5}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.428571429}.modal-body{position:relative;padding:20px;min-height:300px}.modal-footer{padding:19px 20px 20px;margin-top:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer:before,.modal-footer:after{display:table;content:" "}.modal-footer:after{clear:both}.modal-footer:before,.modal-footer:after{display:table;content:" "}.modal-footer:after{clear:both}.modal-footer .btn+.btn{margin-bottom:0;margin-left:5px}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}@media screen and (min-width:768px){.modal-dialog{width:600px;margin:30px auto}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.5);box-shadow:0 5px 15px rgba(0,0,0,0.5)}}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:normal;line-height:1.428571429;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.btn-primary{color:#fff;background-color:#428bca;border-color:#357ebd}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#3276b1;border-color:#285e8e}</style><meta property="og:locale" content="pt_BR"><meta property="og:type" content="website"><meta property="og:title" content="Código do Importador - O curso mais Completo do Brasil"><meta name="twitter:title" content="Código do Importador - O curso mais Completo do Brasil"><meta property="og:site_name" content="Pagina de Vendas"><meta name="application-name" content="Pagina de Vendas"><style type="text/css">.modal-open{overflow:hidden}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:auto;overflow-y:scroll}.modal.fade .modal-dialog{-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);transform:translate(0,-25%);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}.modal-dialog{position:relative;z-index:1050;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;border:1px solid #999;border:1px solid rgba(0,0,0,0.2);border-radius:6px;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);box-shadow:0 3px 9px rgba(0,0,0,0.5);background-clip:padding-box}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1030;background-color:#000}.modal-backdrop.fade{opacity:0;filter:alpha(opacity=0)}.modal-backdrop.in{opacity:.5;filter:alpha(opacity=50)}.modal-header{min-height:16.428571429px;padding:15px;border-bottom:1px solid #e5e5e5}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.428571429}.modal-body{position:relative;padding:20px;min-height:300px}.modal-footer{padding:19px 20px 20px;margin-top:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer:before,.modal-footer:after{display:table;content:" "}.modal-footer:after{clear:both}.modal-footer:before,.modal-footer:after{display:table;content:" "}.modal-footer:after{clear:both}.modal-footer .btn+.btn{margin-bottom:0;margin-left:5px}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}@media screen and (min-width:768px){.modal-dialog{width:600px;margin:30px auto}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.5);box-shadow:0 5px 15px rgba(0,0,0,0.5)}}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:normal;line-height:1.428571429;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.btn-primary{color:#fff;background-color:#428bca;border-color:#357ebd}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#3276b1;border-color:#285e8e}</style><title>Código do Importador - O curso mais Completo do Brasil</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--pageMeta--><!-- Loading Bootstrap --><link rel="stylesheet" href="/builder/elements/css/bootstrap.css"><!-- Loading Elements Styles --><link rel="stylesheet" href="/builder/elements/css/style.css"><!-- Loading Magnific-Popup Styles --><link href="/Content/font-awesome.css" rel="stylesheet" type="text/css"><!-- Fontawesome atualizado --><link href="//fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" rel="stylesheet" type="text/css"><link rel="stylesheet" href="/builder/elements/css/magnific-popup.css"><!-- Loading Font Styles --><link rel="stylesheet" href="/builder/elements/css/iconfont-style.css"><!-- WOW Animate--><link rel="stylesheet" href="/builder/elements/scripts/animations/animate.css"><!-- Favicons --><link rel="stylesheet" href="/builder/elements/css/popup.css"><!-- Popup --><link rel="stylesheet" href="https://blob.contato.io/machine-files/builder/menudrop.css"><!--menu-dropdown--><link rel="icon" href="/content/images/icon.png"><link rel="apple-touch-icon" href="/content/images/icon.png"><link rel="apple-touch-icon" href="/content/images/icon.png" sizes="72x72"><link rel="apple-touch-icon" href="/content/images/icon.png" sizes="114x114"><!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. --><!--js libs--><script src="https://connect.facebook.net/signals/config/285829252770393?v=2.9.33&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="/builder/elements/scripts/jquery-1.11.2.min.js"></script><script src="/builder/elements/scripts/html5shiv.js" defer=""></script><script src="/builder/elements/scripts/respond.min.js" defer=""></script><!--headerIncludes--><link href="https://blob.contato.io/machine-files/builder/allpages.builder.css" rel="stylesheet" type="text/css"><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><style type="text/css">input {color: #323232!important;}
+@media (max-width: 600px){
+.countdown > div div {
+    font-size: 46px;
+}
+.countdown em {
+    font-size: 12px;
+}
+.countdown > div {
+    margin: 0 8px;
+}
+}
+</style><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '285829252770393');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=285829252770393&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '285829252770393');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=285829252770393&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><style type="text/css">.keyword-info-container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  border-bottom: 1px solid #DEE1E5;
+}
+
+.keyword-info-container.youtube {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.keyword-info-container .title {
+	color: #26282D;
+	font-size: 17px;
+  font-weight: bold;
+}
+
+.keyword-info-container .tabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEE1E5;
+  margin-top: -10px;
+  padding: 0px 16px;
+  align-items: center;
+}
+.keyword-info-container .tabs li {
+  padding: 8px;
+  padding-left: 0;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+}
+.keyword-info-container .tabs li.small {
+  font-size: 10px;
+}
+.keyword-info-container .tabs li:last-child {
+  overflow: hidden;
+}
+
+.keyword-info-container .tabs li.active {
+  color: #4285F4;
+}
+
+table.keyword-info-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #000;
+  font-size: 12px;
+  position: relative;
+}
+
+.keyword-info-table thead {
+  height: 50px;
+}
+
+.keyword-info-table th {
+  padding: 10px;
+  padding-left: 0;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+}
+
+.keyword-info-table th:first-child {
+  padding-left: 16px;
+}
+
+.keyword-info-table th:last-child {
+  padding-right: 16px;
+}
+
+.keyword-info-table td {
+  border-bottom: 1px solid #DEE1E5;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.keyword-info-table td:first-child {
+  padding-left: 16px;
+}
+
+.keyword-info-table td:last-child {
+  padding-right: 16px;
+}
+
+.keyword-info-table tfoot tr {
+  background-color: #DEE1E544;
+}
+
+.keyword-info-table tfoot tr:last-child td{
+  border-bottom: none;
+}
+
+.ubersuggest-button {
+  color: #0086F7;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 29px;
+  padding: 8px 30px;
+  border: 1px solid #0086F7;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.ubersuggest-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 10px 0 0;
+  font-weight: bold;
+  color: #26282D;
+}
+
+.ubersuggest-logo {
+  width: 182px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.keyword-info-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 20px 16px;
+  border-top: 1px solid #DEE1E5;
+}
+
+.header h2 {
+  color: #000000;
+  font-family: Geomanist;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+html[dark] .keyword-info-container .title {
+  color: #fff;
+}
+
+html[dark] .keyword-info-container .tabs {
+  border-color: #ffffff0d;
+}
+
+html[dark] .keyword-info-container .tabs li {
+  color: #fff;
+}
+
+html[dark] .keyword-info-container .tabs li.active {
+  color: #4285F4;
+}
+
+html[dark] table.keyword-info-table {
+  color: #fff;
+}
+
+html[dark] .keyword-info-table th {
+  color: #fff;
+}
+
+html[dark] .keyword-info-table tfoot tr {
+  background-color: #3D3D3D;
+}
+
+html[dark] .keyword-info-table tfoot tr:last-child td .button-arrow{
+  border-color: #fff;
+}
+
+
+</style><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:400px;-webkit-perspective:800px;perspective:800px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none}.tippy-popper.html-template{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] [x-arrow]{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 9px}.tippy-popper[x-placement^=top] [x-arrow].arrow-small{border-top:5px solid #333;border-right:5px solid transparent;border-left:5px solid transparent;bottom:-5px}.tippy-popper[x-placement^=top] [x-arrow].arrow-big{border-top:10px solid #333;border-right:10px solid transparent;border-left:10px solid transparent;bottom:-10px}.tippy-popper[x-placement^=top] [x-circle]{-webkit-transform-origin:0 33%;transform-origin:0 33%}.tippy-popper[x-placement^=top] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-55%);transform:scale(1) translate(-50%,-55%);opacity:1}.tippy-popper[x-placement^=top] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-50%);transform:scale(.15) translate(-50%,-50%);opacity:0}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow]{border-top:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-top:5px solid #fff;border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-top:10px solid #fff;border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-arrow]{border-top:7px solid rgba(0,0,0,.7);border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-top:5px solid rgba(0,0,0,.7);border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-top:10px solid rgba(0,0,0,.7);border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade].enter{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade].leave{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift].enter{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift].leave{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale].enter{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale].leave{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] [x-arrow]{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 9px}.tippy-popper[x-placement^=bottom] [x-arrow].arrow-small{border-bottom:5px solid #333;border-right:5px solid transparent;border-left:5px solid transparent;top:-5px}.tippy-popper[x-placement^=bottom] [x-arrow].arrow-big{border-bottom:10px solid #333;border-right:10px solid transparent;border-left:10px solid transparent;top:-10px}.tippy-popper[x-placement^=bottom] [x-circle]{-webkit-transform-origin:0 -50%;transform-origin:0 -50%}.tippy-popper[x-placement^=bottom] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-45%);transform:scale(1) translate(-50%,-45%);opacity:1}.tippy-popper[x-placement^=bottom] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-5%);transform:scale(.15) translate(-50%,-5%);opacity:0}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-arrow]{border-bottom:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-bottom:5px solid #fff;border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-bottom:10px solid #fff;border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-arrow]{border-bottom:7px solid rgba(0,0,0,.7);border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-bottom:5px solid rgba(0,0,0,.7);border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-bottom:10px solid rgba(0,0,0,.7);border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade].enter{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade].leave{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift].enter{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift].leave{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale].enter{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale].leave{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] [x-arrow]{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:6px 0}.tippy-popper[x-placement^=left] [x-arrow].arrow-small{border-left:5px solid #333;border-top:5px solid transparent;border-bottom:5px solid transparent;right:-5px}.tippy-popper[x-placement^=left] [x-arrow].arrow-big{border-left:10px solid #333;border-top:10px solid transparent;border-bottom:10px solid transparent;right:-10px}.tippy-popper[x-placement^=left] [x-circle]{-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=left] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%);opacity:1}.tippy-popper[x-placement^=left] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-50%);transform:scale(.15) translate(-50%,-50%);opacity:0}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-arrow]{border-left:7px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-left:5px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-left:10px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-arrow]{border-left:7px solid rgba(0,0,0,.7);border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-left:5px solid rgba(0,0,0,.7);border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-left:10px solid rgba(0,0,0,.7);border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade].enter{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade].leave{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift].enter{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift].leave{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale].enter{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale].leave{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] [x-arrow]{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:6px 0}.tippy-popper[x-placement^=right] [x-arrow].arrow-small{border-right:5px solid #333;border-top:5px solid transparent;border-bottom:5px solid transparent;left:-5px}.tippy-popper[x-placement^=right] [x-arrow].arrow-big{border-right:10px solid #333;border-top:10px solid transparent;border-bottom:10px solid transparent;left:-10px}.tippy-popper[x-placement^=right] [x-circle]{-webkit-transform-origin:-50% 0;transform-origin:-50% 0}.tippy-popper[x-placement^=right] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%);opacity:1}.tippy-popper[x-placement^=right] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-50%);transform:scale(.15) translate(-50%,-50%);opacity:0}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-arrow]{border-right:7px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-right:5px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-right:10px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-arrow]{border-right:7px solid rgba(0,0,0,.7);border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-right:5px solid rgba(0,0,0,.7);border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-right:10px solid rgba(0,0,0,.7);border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade].enter{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade].leave{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift].enter{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift].leave{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale].enter{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale].leave{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper .tippy-tooltip.transparent-theme{background-color:rgba(0,0,0,.7)}.tippy-popper .tippy-tooltip.transparent-theme[data-animatefill]{background-color:transparent}.tippy-popper .tippy-tooltip.light-theme{color:#26323d;box-shadow:0 4px 20px 4px rgba(0,20,60,.1),0 4px 80px -8px rgba(0,20,60,.2);background-color:#fff}.tippy-popper .tippy-tooltip.light-theme[data-animatefill]{background-color:transparent}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.95rem;padding:.4rem .8rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip--small{padding:.25rem .5rem;font-size:.8rem}.tippy-tooltip--big{padding:.6rem 1.2rem;font-size:1.2rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-interactive]{pointer-events:auto}.tippy-tooltip[data-inertia]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip [x-arrow]{position:absolute;width:0;height:0}.tippy-tooltip [x-circle]{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:130%;width:calc(110% + 2rem);left:50%;top:50%;z-index:-1;overflow:hidden;transition:all ease}.tippy-tooltip [x-circle]:before{content:"";padding-top:90%;float:left}@media (max-width:450px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}
+</style><style type="text/css">.ubersuggest-header-container {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+}
+
+.ubersuggest-header-container .row {
+  margin: 0;
+  padding: 15px 16px 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ue-enable {
+  display: block;
+}
+
+.ue-disable {
+  display: none;
+}
+
+.ubersuggest-header-container .settings {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+}
+.ubersuggest-header-container .settings-label {
+  margin-right: 21px;
+}
+
+.ubersuggest-header-container .settings-icon {
+  width: 21px;
+  height: 21px;
+  margin-right: 7px;
+}
+</style><style type="text/css">.keyword-info-section {
+  color: #26282D;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 10px 0 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.keyword-info-section.hidden {
+  display: none;
+}
+
+.keyword-info-section.google{
+  background-color: #fff;
+}
+
+.keyword-info-section.youtube{
+  margin-right: 15px;
+  padding: 0 0 0 10px;
+  height: 100%;
+  background-color: #fff;
+}
+
+html[dark="true"] .keyword-info-section.youtube {
+  background-color: #121212;
+}
+
+.keyword-info-section.amazon{
+  padding: 13px 0;
+  background-color: #fff;
+}
+</style><style type="text/css">.kw-overview-container {
+  box-sizing: border-box;
+  width: 673px;
+  padding: 0;
+  margin: 0;
+  margin-top: 14px;
+  font-size: 12px;
+}
+.kw-overview-container.youtube {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+</style><style type="text/css">.bl-info-container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.bl-info-header {
+  display: flex;
+  height: 24px;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.bl-info-header .row {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bl-info-header .row.youtube {
+  justify-content: flex-start;
+}
+
+.bl-info-content,
+.kw-info-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DEE1E5;
+  border-radius: 8px;
+  padding-top: 0;
+}
+
+.bl-info-content img.loading {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.kw-info-content img.loading {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+table.bl-info-table,
+table.kw-info-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #808185;
+  font-size: 12px;
+}
+
+.bl-info-table thead,
+.kw-info-table thead {
+  height: 50px;
+}
+
+.bl-info-table tr,
+.kw-info-table tr {
+  width: 100%;
+  max-width: 600px;
+}
+
+.bl-info-table th,
+.kw-info-table th {
+  padding: 10px;
+  padding-left: 0;
+  font-weight: bold;
+  color: #000000;
+  font-size: 11px;
+  border-bottom: 1px solid #DEE1E5;
+}
+.bl-info-table th:first-child,
+.kw-info-table th:first-child {
+  padding-left: 16px;
+}
+
+.bl-info-table th:last-child,
+.kw-info-table th:last-child {
+  border-right: none;
+  padding-right: 16px;
+}
+
+
+.bl-info-table td,
+.kw-info-table td {
+  border-bottom: 1px solid #DEE1E5;
+  padding: 10px;
+  padding-left: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+}
+
+.bl-info-table td:first-child,
+.kw-info-table td:first-child {
+  border-left: none;
+  padding-left: 16px;
+}
+
+.bl-info-table td:last-child,
+.kw-info-table td:last-child {
+  border-right: none;
+  padding-right: 16px;
+}
+
+.bl-info-table tfoot tr:last-child td,
+.kw-info-table tfoot tr:last-child td {
+  border-bottom: none;
+}
+
+.bl-info-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+</style><style type="text/css">.statistics-graph-container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding: 0px 16px;
+}
+
+.statistics-graph-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.statistics-graph-container .row .title {
+	color: #26282D;
+	font-size: 17px;
+  font-weight: bold;
+}
+
+.statistics-graph-container .tabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEE1E5;
+  margin: 0 -16px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 0px 16px;
+}
+
+.statistics-graph-container .tabs li {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  color: #000;
+  cursor: pointer;
+  font-size: 13px;
+  border-bottom: 3px solid transparent;
+}
+
+.statistics-graph-container .tabs li:first-child {
+  margin-left: -16px;
+}
+
+.statistics-graph-container .tabs li.active {
+  color: #4285F4;
+  border-bottom: 3px solid #4285F4;
+}</style></head><body data-target=".navMenuCollapse" data-spy="scroll" class="vsc-initialized" cz-shortcut-listen="true"><!--PRELOADER--><div id="wrap"><!-- VIDEOS EM 3 COLUNAS --><!-- VIDEOS EM 3 COLUNAS --><!-- BENEFITS GRID NUM 2 BLOCK --><!-- TEAM BLOCK --><!-- TESTIMONIALS SLIDER STAR 2 BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- PRICING TABLE 4COL BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- TEXT 1COL BLOCK --><!-- COUNTER BLOCK --><!-- VIDEOS EM 3 COLUNAS --><!-- VIDEOS EM 3 COLUNAS --><!-- BENEFITS GRID NUM 2 BLOCK --><!-- TEAM BLOCK --><!-- TESTIMONIALS SLIDER STAR 2 BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- PRICING TABLE 4COL BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><!-- TEXT 1COL BLOCK --><!-- COUNTER BLOCK --><section id="video-venda" data-selector="section" style="background-image: url(&quot;https://blob.contato.io/machine-user-images/Happy-Independnce-Day-to-you-and-your-loved-ones!-img-2792977-20200829114637.png&quot;); background-size: cover; background-repeat: no-repeat; background-color: rgb(0, 0, 0); padding-top: 25px; padding-bottom: 20px; border-bottom: 0px none rgb(85, 85, 85); background-attachment: scroll;" alt="Logo" src="https://blob.contato.io/machine-user-images/logo-ricardo-PNG-2-img-2792977-20200831150025.png"><div class="row"><div class="container"><div class="col-md-12" data-selector=".col-md-12" alt="Logo" src="https://blob.contato.io/machine-user-images/logo-ricardo-PNG-2-img-2792977-20200831150025.png" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-top: -40px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 1px; border-style: none;"></div><div class="col-md-12" data-selector=".col-md-12" alt="Logo" src="https://blob.contato.io/machine-user-images/logo-ricardo-PNG-2-img-2792977-20200831150025.png" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px; border-width: 1px; border-style: none; padding-top: 0px;"><h2 class="text-center" data-selector="h2" style="color: rgb(255, 255, 255); font-size: 34px; background-color: rgba(0, 0, 0, 0); margin-bottom: 40px; margin-top: 50px; font-family: Roboto;" alt="Logo" src="https://blob.contato.io/machine-user-images/logo-ricardo-PNG-2-img-2792977-20200831150025.png"><strong>Oportunidade</strong> que me fez sair de <strong>Jovem aprendiz</strong> para <br><strong>Empresário </strong>aos 20 Anos <strong><span style="color: rgb(84, 141, 212);">Importando produtos</span> </strong><span style="color: rgb(255, 255, 255);">dos E</span><span style="color: rgb(255, 255, 255);">stados Unidos</span> <br>sem ser <strong><span style="color: rgb(224, 13, 13);">Taxado</span></strong> e sem Precisar sair de Casa!
+<br></h2></div><div class="col-md-10 col-md-offset-1 text-center" style="margin-bottom: 17px;" data-selector=".col-md-10"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100%" height="460" src="//www.youtube.com/embed/WV_1Duf9KA8?controls=0" frameborder="0" allowfullscreen=""></iframe></div></div></div></div></section><section data-selector="section" id="botao-headline" style="padding-top: 0px; padding-bottom: 0px; border-bottom: 0px none rgb(0, 0, 0); background-attachment: scroll; background-color: rgb(0, 0, 0); background-size: auto; background-repeat: repeat;" class=""><div class="row"><div class="container"><div class="col-md-8 col-md-offset-2" data-selector=".col-md-8"><a href="https://go.hotmart.com/X44393475D?ap=5a1a&src=googleADScheckout"
+ class="btn btn-lg btn-block btn-success" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="white-space: normal; background: rgb(255, 153, 0); border-color: rgb(255, 153, 0); color: rgb(255, 255, 255); border-width: 1.25px; border-radius: 5px; font-size: 20px;" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><strong><span style="font-size: 28px;">QUERO ME INSCREVER AGORA!</span></strong></a></div></div></div></section><section id="intro-countdown" class="cover-bg no-sep text-center bg-color1 dark-bg" data-selector="section" style="padding-top: 30px; padding-bottom: 30px; background-size: auto; background-repeat: no-repeat; background-color: rgb(0, 0, 0); border-bottom: 0px none rgb(255, 255, 255); background-attachment: scroll; background-image: none;"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><div></div></div></div></div></section><section id="subscribe-half-right" style="padding-top: 50px; padding-bottom: 80px; border-bottom: 0px none rgb(232, 232, 232); background-attachment: scroll; background-color: rgb(255, 255, 255); background-size: auto; background-position: 0% 0%; background-repeat: repeat; background-image: none;" data-selector="section" alt="afiliados" src="https://blob.contato.io/machine-user-images/FOTO-PERFIL-RICARDO-img-2792977-20200904190808.png"><div class="container"><div class="row"><div class="col-md-3" data-selector=".col-md-3" alt="afiliados" src="https://blob.contato.io/machine-user-images/FOTO-PERFIL-RICARDO-img-2792977-20200904190808.png" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 10px; padding-bottom: 0px; border-width: 1px; border-style: none;"><br><br><img class="img-circle img-responsive center-block wow pulse" src="https://blob.contato.io/machine-user-images/FOTO-PERFIL-RICARDO-img-2792977-20200904190808.png" alt="afiliados" data-selector="img" style="width: 263px; height: 259px; border-radius: 50%; border: 1px none rgb(85, 85, 85); visibility: visible; animation-duration: 3s; animation-delay: 3s; animation-name: pulse;" data-wow-duration="3s" data-wow-delay="3s"></div><div class="col-md-9" data-selector=".col-md-9" alt="afiliados" src="https://blob.contato.io/machine-user-images/FOTO-PERFIL-RICARDO-img-2792977-20200904190808.png" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 30px; padding-bottom: 0px; border-width: 1px; border-style: none;"><h2 data-selector="h2" style="color: rgb(255, 255, 255); font-size: 36px; margin-bottom: -20px; margin-top: 45px; font-weight: bold; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class="" alt="afiliados" src="https://blob.contato.io/machine-user-images/img-57320-20170802085440.png"><span style="color: rgb(0, 0, 0);">Eu sou o </span><strong><span style="color: rgb(0, 0, 0);">Ricardo Henrique<br></span><br></strong></h2><p class="desc-text editContent" data-selector="p" style="color: rgb(255, 255, 255); font-size: 18px; background-color: rgba(0, 0, 0, 0); font-family: Arial;" alt="afiliados" src="https://blob.contato.io/machine-user-images/FOTO-PERFIL-RICARDO-img-2792977-20200904190808.png"><span style="color: rgb(0, 0, 0);">Criei o projeto código do importador para dar para vocês ajuda que eu tanto procurei quando estava começando a trabalhar pela internet! Hoje em dia já obtive várias conquistas graças ao mercado de importação.<br><br> E meu maior objetivo é te ajudar a chegar no topo do mercado de importação também. Ou seja, não perca essa oportunidade.Porque eu realmente vou te ajudar a ganhar muito dinheiro com a importação</span></p><div class="row" style="margin-top: 40px;"><div class="col-md-2" data-selector=".col-md-2"></div><div class="col-md-9" data-selector=".col-md-9"></div></div></div></div></div></section><!-- VIDEOS EM 3 COLUNAS --><section id="depoimentos" data-selector="section" class="wow fadeInLeft" style="padding-top: 60px; padding-bottom: 60px; border-bottom: 0px none rgb(232, 232, 232); background-attachment: scroll; background-color: rgb(0, 0, 0); background-size: auto; background-repeat: repeat; background-image: none; visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="1s" data-wow-delay="1s" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><div class="container"><h2 class="title text-center wow flash" data-selector="h2" style="color: rgb(34, 34, 34); font-size: 28px; margin-bottom: 30px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto; visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: flash;" data-wow-duration="1s" data-wow-delay="1s" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><span style="color: rgb(255, 255, 255);"><strong>VEJA O QUE OS ALUNOS QUE JÁ PARTICIPARAM DA MENTORIA ESTÃO FALANDO...</strong></span></h2><div class="row"><div class="col-md-4 editContent" data-selector=".col-md-4"><div class="embed-responsive embed-responsive-16by9"><iframe data-selector="p" width="100%" height="240" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/wkqW1kpj8p4"></iframe></div></div><div class="col-md-4 editContent" data-selector=".col-md-4"><div class="embed-responsive embed-responsive-16by9"><iframe data-selector="p" width="100%" height="240" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/_vM9UW_k8LA"></iframe></div></div><div class="col-md-4 editContent" data-selector=".col-md-4"><div class="embed-responsive embed-responsive-16by9"><iframe data-selector="iframe" width="100%" height="240" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/83ue6dC0gKs"></iframe></div></div></div></div></section><!-- VIDEOS EM 3 COLUNAS --><!-- BENEFITS GRID NUM 2 BLOCK --><section id="benefits-grid-num-2" class="bg-color3 wow fadeInRight" data-selector="section" alt="afiliados" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png" style="background-image: none; background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 0px; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll; visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: fadeInRight;" data-wow-duration="1s" data-wow-delay="1s"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-top: 20px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 1px; border-style: none;"><h2 class="text-center" data-selector="h2" style="color: rgb(66, 139, 202); font-size: 44px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" src="/builder/elements/images/photo-team-1.jpg"><span style="color: rgb(0, 0, 0);">O QUE VOCÊ ENCONTRARÁ<br></span><strong><span style="color: rgb(0, 0, 0);"> NO CÓDIGO DO IMPORTADOR?
+</span></strong><br><br></h2></div><div class="col-sm-6"><ul class="item-list-left"></ul></div><div class="col-sm-6"><ul class="item-list-left"></ul></div></div></div></section><section id="benefits-2col" class="dark-bg bg-color1" data-selector="section" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 50px; background-image: none; border-bottom: 0px none rgb(255, 255, 255); background-repeat: repeat; background-size: auto; background-attachment: scroll;"><div class="container"><div class="row"><div class="col-md-6" data-selector=".col-md-6"><ul class="item-list-right"><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon icon-graduation" data-selector=".icon" id="ui-id-7" style="color: rgb(0, 192, 255); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(68, 68, 68); font-size: 24px; margin-bottom: 25px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><strong>CURSO COMPLETO DE<br> IMPORTAÇÃO DOS EUA</strong></h3><span style="color: rgb(0, 0, 0);">O curso terá vários módulos abordando todos os temas relacionados à importação dos EUA sem ser taxado, te tornando assim, um ESPECIALISTA na área.<br></span><br></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><span style="color: rgb(0, 0, 0);"><i class="icon fa fa-star-o" data-selector=".icon" id="ui-id-9"></i><br></span><h3 data-selector="h3" style="margin-bottom: 25px; margin-top: 0px; color: rgb(255, 255, 255); font-size: 24px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>COPYWRITING E A ESSÊNCIA DAS VENDAS ONLINE</strong></span></h3><span style="color: rgb(0, 0, 0);">Tudo que você precisa aprender para vender qualquer coisa para qualquer pessoa nesse mercado.</span><br></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon icon-key2" data-selector=".icon" id="ui-id-6" style="color: rgb(0, 192, 255); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(68, 68, 68); font-size: 24px; margin-bottom: 25px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><strong>O SEGREDO DOS IMPORTADORES DE SUCESSO - MÓDULO EXCLUSIVO</strong></h3><span style="color: rgb(0, 0, 0);">Nesse módulo você vai aprender a importar qualquer produto no Atacado sem ser TAXADO e por um preço ridículo de tão barato podendo lucrar muito com a revenda. Esse módulo é o que eu chamo de Galinha dos ovos de Ouro.<br></span><br></li></ul></div><div class="col-md-6" data-selector=".col-md-6"><ul class="item-list-left"><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon icon-mobile" data-selector=".icon" id="ui-id-8" style="color: rgb(0, 192, 255); font-size: 48px; opacity: 1;"></i><span style="color: rgb(0, 0, 0);"><br></span><h3 data-selector="h3" style="margin-bottom: 25px; margin-top: 0px; color: rgb(255, 255, 255); font-size: 24px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>CURSO COMPLETO FOCADO EM <br>IMPORTAÇÃO DE IPHONE</strong></span></h3><span style="color: rgb(0, 0, 0);">Para você que está querendo trabalhar com a Revenda de iPhone, vou ensinar todo o passo a passo de como você poderá importar iPhones muito mais baratos que no Brasil, e SEM TAXA!<br></span><br></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon icon-target2" data-selector=".icon" id="ui-id-10"></i><span style="color: rgb(0, 0, 0);"><br></span><h3 data-selector="h3" style="margin-bottom: 25px; margin-top: 0px; color: rgb(255, 255, 255); font-size: 24px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>COMO VENDER MUITO ATRAVÉS DA LOJA VIRTUAL</strong></span></h3><span style="color: rgb(0, 0, 0);">Vou te ensinar todo o passo a passo de como você poderá faturar múltiplos dígitos com apenas UMA Loja Virtual. Utilizar o Facebook e Instagram Ads para conquistar clientes todos os dias e vender o que quiser. Clientes que vão atrás de você.</span><br></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon fa fa-flag-o" data-selector=".icon" id="ui-id-11" style="color: rgb(0, 192, 255); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(68, 68, 68); font-size: 24px; margin-bottom: 25px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><strong>E MUUUITO MAIS...</strong></h3><span style="color: rgb(0, 0, 0);">No Treinamento terá muito mais conteúdos que agregarão valor à você.</span><br><br></li></ul></div></div></div></section><section data-selector="section" id="botao-cta" style="padding-top: 0px; padding-bottom: 0px; background-color: rgb(255, 255, 255); background-image: none; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll;"><div class="row"><div class="container"><div class="col-md-8 col-md-offset-2 text-center" data-selector=".col-md-8"></div><div class="col-md-12" data-selector=".col-md-12" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; border-width: 1px; border-style: none;"><a href="https://go.hotmart.com/X44393475D?ap=5a1a&src=googleADScheckout"
+ class="btn btn-lg btn-block btn-success" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="white-space: normal; border-color: rgb(255, 153, 0); color: rgb(255, 255, 255); border-width: 1.25px; border-radius: 5px; font-size: 40px; background: rgb(255, 153, 0);" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><strong>QUERO APRENDER A IMPORTAR AGORA</strong></a></div><div class="col-md-8 col-md-offset-2" style="margin-top: 56.9922px; background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(85, 85, 85); border-radius: 0px; margin-bottom: 0px; padding-top: 0px; border-width: 1px; border-style: none; padding-bottom: 0px;" data-selector=".col-md-8"><h4 class="text-center" data-selector="h4" style="color: rgb(102, 102, 102); font-size: 18px; margin-bottom: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto; margin-top: -60px;" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><strong>HOJE POR MENOS DE R$ 1,00 POR DIA</strong></h4></div></div></div></section><section id="intro-countdown" class="cover-bg no-sep text-center bg-color1 dark-bg" data-selector="section" style="padding-top: 14px; padding-bottom: 0px; background-size: auto; background-repeat: no-repeat; background-color: rgb(0, 0, 0); border-bottom: 0px none rgb(255, 255, 255); background-attachment: scroll; background-image: none;"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); border-radius: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; border-width: 1px; border-style: none;"><div></div></div></div></div></section><!-- TEAM BLOCK --><section id="team" class="team-block wow fadeInLeft" data-selector="section" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg" style="background-image: none; background-color: rgb(0, 0, 0); padding-top: 0px; padding-bottom: 0px; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll; visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="1s" data-wow-delay="1s"><div class="container"><h2 class="title text-center" data-selector="h2"><strong><span style="color: rgb(255, 255, 255);">O Que Acontece Quando Você Aplica Tudo Isso?</span></strong></h2><div class="row"><div class="col-sm-4"><img class="screen" alt="Team 1" src="https://blob.contato.io/machine-user-images/depo9imento-1-img-2792977-20200906172820.jpeg" data-selector="img" style="width: auto; height: auto; border-radius: 0px; border-color: rgb(85, 85, 85); border-style: none; border-width: 1px;"> 
+
+
+
+<ul class="soc-list"><li><a href="about:blank#" target="_blank"></a></li><li><a href="about:blank#" target="_blank"></a></li><li><a href="about:blank#" target="_blank"></a></li></ul></div><div class="col-sm-4"><img class="screen" alt="Team 2" src="https://blob.contato.io/machine-user-images/depo9imento-3-img-2792977-20200906172823.jpeg" data-selector="img" style="width: auto; height: auto; border-radius: 0px; border-color: rgb(85, 85, 85); border-style: none; border-width: 1px;"> 
+
+
+
+<ul class="soc-list"><li><a href="about:blank#" target="_blank"></a></li><li><a href="about:blank#" target="_blank"></a></li><li><a href="about:blank#" target="_blank"></a></li></ul></div><div class="col-sm-4"><img class="screen" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg" data-selector="img" style="width: auto; height: auto; border-radius: 0px; border-color: rgb(85, 85, 85); border-style: none; border-width: 1px;"> 
+
+
+
+<ul class="soc-list"><li><a href="about:blank#" target="_blank"></a></li><li><a href="about:blank#" target="_blank"></a></li><li><a href="about:blank#" target="_blank"></a></li></ul></div></div></div></section><!-- TESTIMONIALS SLIDER STAR 2 BLOCK --><!-- BENEFITS LIST LEFT BLOCK --><section id="benefits-list-left" class="dark-bg bg-color1 wow fadeInUp" data-selector="section" style="padding-top: 50px; padding-bottom: 30px; border-bottom: 0px none rgb(255, 255, 255); background-image: none; background-attachment: scroll; background-color: rgb(255, 255, 255); background-size: auto; background-repeat: repeat; visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: fadeInUp;" src="https://blob.contato.io/machine-user-images/img-55398-20160829144537.PNG" data-wow-duration="1s" data-wow-delay="1s"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><h2 class="title text-center" data-selector="h2" style="color: rgb(255, 255, 255); font-size: 44px; margin-bottom: 60px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);"><strong><span style="color: rgb(0, 0, 0);">5 Presentes Incríveis Para Você Potencializar Ainda Mais Seus Resultados</span></strong></h2></div><div class="col-md-12" data-selector=".col-md-12"><ul class="item-list-left item-list-small item-list"><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon icon-check" data-selector=".icon" id="ui-id-15" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 20px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>#1: Campanhas Pagas Instagram e Facebook. (R$ 397)</strong><br>O famoso Tráfego Pago, esse é o verdadeiro mar de ouro para Vender qualquer coisa na Internet. É por isso que eu vou trazer para você essa solução da maneira mais completa e simples de se entender. Esse é o caminho para você ter um crescimento sem nenhum limite nesse mercado. Dominando tudo que estou te ensinando mais o Tráfego Pago, você domina esse jogo. Esse módulo sozinho daria um treinamento inteiro onde eu terio um custo mínimo de R$ 297,00 e poderia vender ele a parte. Mas ao adquirir o Código do Importador hoje você vai levar ele totalmente gratuito.<br></span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon icon-check" data-selector=".icon" id="ui-id-16" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 20px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>#2: Como Importar da China. (R$ 197,00)</strong><br>Você vai aprender a Importar direto da China para o seu endereço, irá descobrir os melhores produtos para importar e revender no Brasil tendo um ROI absurdo. A China tem sido reconhecida por seus negócios promissores e de sucesso quanto na importação de produtos com preços inacreditáveis e com uma gama de variedade enorme. Além disso você vai ter acesso a um Fornecedor Xiaomi no Brasil. Você vai levar de presente entrando para o Treinamento Código do Importar Hoje.<br></span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><span style="color: rgb(0, 0, 0);"><i class="icon icon-check" data-selector=".icon" id="ui-id-17" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 20px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>#3: Como Criar artes Incríveis para suas Redes Sociais. (R$ 97,00)</strong><br>Você vai aprender de forma simples e profissional a criar artes incríveis para suas Redes Sociais, artes impossíveis de serem ignoradas. Você vai terminar esse treinamento com o conhecimento para ATRAIR clientes TODOS OS DIAS através das redes sociais, e a dominar as ferramentas de edição e criação de Imagens mesmo sendo um Total Iniciante de forma rápida, simples e descomplicada! Esse módulo sozinho daria um treinamento inteiro de no mínimo R$ 97,00. Mas ao adquirir o Código do Importador hoje você vai levar ele totalmente gratuito.<br></span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><span style="color: rgb(0, 0, 0);"><i class="icon icon-check" data-selector=".icon" id="ui-id-18" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 20px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>#4: Grupo de Elite Fechado (R$ 497,00)</strong><br>Você receberá uma área de membros fechada para interagir com outras pessoas com o mesmo foco que você. Vai poder acompanhar avanços e descobertas de pessoas que estão em campo, fazendo esse negócio acontecer. E também compartilhar os seus avanços para obter feedbacks e reconhecimento pelo seu progresso. O custo para fazer parte desse grupo de elite é ZERO. Por ser um grupo fechado que só reúne pessoas dedicadas a esse mercado, para interação e networking. Normalmente é necessário no mínimo R$ 497,00 para fazer parte de um grupo exclusivo assim. Mas hoje ele também está Totalmente Gratuito dentro do Código do Importador.<br></span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><span style="color: rgb(0, 0, 0);"><i class="icon icon-check" data-selector=".icon" id="ui-id-19" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 20px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" class=""><span style="color: rgb(0, 0, 0);"><strong>#5:Acesso Vitalício ao Código do Importador.</strong><br>Entrando para o Treinamento Código do Importador Hoje nessa Primeira turma, você terá acesso Vitalício. Ou Seja você o treinamento é seu, você poderá assistir e rever todas as aulas mesmo daqui a 5 ou 10 anos. Exclusivo somente para primeira Turma.</span></h3></li></ul></div></div></div></section><!-- BENEFITS LIST LEFT BLOCK --><section id="benefits-list-left" class="dark-bg bg-color1" data-selector="section" style="padding-top: 50px; padding-bottom: 0px; border-bottom: 0px none rgb(255, 255, 255); background-image: none; background-attachment: scroll; background-color: rgb(255, 255, 255); background-size: auto; background-repeat: repeat;" src="https://blob.contato.io/machine-user-images/img-55398-20161219105106.png" alt="Logo"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><h2 class="title text-center" data-selector="h2" style="color: rgb(255, 255, 255); font-size: 34px; margin-bottom: 60px; margin-top: 0px; background-color: rgba(0, 0, 0, 0); font-family: Roboto;" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg"><strong><span style="color: rgb(0, 0, 0);">Vamos ver Novamente o que Você vai Ganhar Através do Código do Importador.</span></strong></h2></div><div class="col-md-12" data-selector=".col-md-12"><ul class="item-list-left item-list-small item-list"><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon fa fa-angle-double-right" data-selector=".icon" id="ui-id-15" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">O Treinamento Completo<strong> Código do Importador:</strong> Aulas em vídeos e conteúdos em texto para você assistir onde você quiser, seja pelo computador ou celular (R$ 297 a vista)</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon fa fa-angle-double-right" data-selector=".icon" id="ui-id-16" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Campanhas Pagas Instagram e Facebook: Como Alavancar seu Negócio Através do Tráfego Pago (R$ 397)</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon fa fa-angle-double-right" data-selector=".icon" id="ui-id-17" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Como Importar da China: Você vai aprender a Importar direto da China para o seu endereço, irá descobrir os melhores produtos para importar e revender no Brasil tendo um ROI absurdo. (R$ 197)</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon fa fa-angle-double-right" data-selector=".icon" id="ui-id-18" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;" alt="Team 3" src="https://blob.contato.io/machine-user-images/depo9imento-2-img-2792977-20200906172957.jpeg"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Como Criar artes Incríveis para suas Redes Sociais: Você vai aprender de forma simples e profissional a criar artes incríveis para suas Redes Sociais, artes impossíveis de serem ignoradas. (R$ 97)</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><span style="color: rgb(0, 0, 0);"><i class="icon fa fa-angle-double-right" data-selector=".icon" id="ui-id-19" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i></span><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Grupo Código do Importador: Grupo Fechado Para Elite. (R$ 497)<br><br><br></span><span style="color: rgb(0, 0, 0);"><strong>Somando tudo chegamos ao total de R$ 1.485,00 em puro conhecimento que você terá total acesso por apenas 12x de R$ 83,25</strong></span><br></h3></li></ul></div></div></div></section><section data-selector="section" id="botao-cta" style="padding-top: 100px; padding-bottom: 100px; background-color: rgb(0, 0, 0); background-image: none; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll;" alt="Logo" src="https://blob.contato.io/machine-user-images/img-55398-20161219105106.png"><div class="row"><div class="container"><div class="col-md-8 col-md-offset-2 text-center" data-selector=".col-md-8"><h3 class="text-center" data-selector="h3" style="color: rgb(238, 238, 238); font-size: 35px; margin-bottom: 4%; margin-top: 20px;"><strong>QUANTO TENHO QUE INVESTIR HOJE?</strong></h3><h1 class="text-center text-success" data-selector="h1" style="color: rgb(255, 255, 255); font-size: 60px; background-color: rgba(0, 0, 0, 0); margin-bottom: 10px; margin-top: 20px; font-family: Roboto;"><span style="color: rgb(233, 16, 16);">De R$
+<del>997,00</del> </span><br>por apenas R$ 397<br>Ou 12x 38,68</h1><a href="https://go.hotmart.com/X44393475D?ap=5a1a&src=googleADScheckout"
+ class="btn btn-md btn-success" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="white-space: normal; color: rgb(255, 255, 255); border-width: 1.25px; margin-top: 5%; padding: 10px 17px; border-radius: 65px; font-size: 20px; background-color: rgb(255, 173, 0); border-color: rgb(57, 132, 57);"><strong>QUERO ME INSCREVER AGORA!</strong></a><h4 class="text-center" data-selector="h4" style="color: rgb(255, 255, 255); font-size: 24px; margin-bottom: 20px; margin-top: 10px;"><i>Por menos de R$ 1,50 por dia</i></h4></div></div><div class="container"><div class="row" style="background-color: rgb(255,255,255); border-radius: 5px; padding: 15px;"><div class="col-md-2 col-md-offset-1 text-center" data-selector=".col-md-2"><img src="https://blob.contato.io/machine-user-images/img-57320-20170928173116.jpg" width="100" class="img-responsive" style="margin: auto" data-selector="img"></div><div class="col-md-2 text-center" data-selector=".col-md-2"><img src="https://blob.contato.io/machine-user-images/img-57320-20170928173006.jpg" width="100" class="img-responsive" style="margin: auto;" data-selector="img"></div><div class="col-md-2 text-center" data-selector=".col-md-2"><img src="https://blob.contato.io/machine-user-images/img-57320-20170928172958.jpg" width="100" class="img-responsive" style="margin: auto;" data-selector="img"></div><div class="col-md-2 text-center" data-selector=".col-md-2"><img src="https://blob.contato.io/machine-user-images/img-57320-20170928172948.jpg" width="100" class="img-responsive" style="margin: auto" data-selector="img"></div><div class="col-md-2 text-center" data-selector=".col-md-2"><img src="https://blob.contato.io/machine-user-images/img-57320-20170928173019.jpg" width="130" class="img-responsive" style="margin: auto;" data-selector="img"></div></div></div></div></section><!-- PRICING TABLE 4COL BLOCK --><style>#Cardbotao{padding:10px 0 0!important}.precoFundo{background-color:#f5f6f9;padding:20px 0}.oferta{padding:20px}.card{min-height:492px}hr{margin-top:12px!important;margin-bottom:12px!important}p{font-size:20px}.cardBonus{padding:32px 50px!important}</style><section id="headline-full" data-selector="section" style="background: none 0% 0% / auto repeat scroll rgb(255, 255, 255); padding-top: 0px; padding-bottom: 0px; border-bottom: 0px none rgb(85, 85, 85);" src="https://blob.contato.io/machine-user-images/img-55398-20160829144537.PNG"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><h1 class="text-center" data-selector="h1" style="color: rgb(255, 255, 255); font-size: 26px; background-color: rgba(0, 0, 0, 0); margin-bottom: 10px; margin-top: 20px; font-family: Roboto;" src="https://blob.contato.io/machine-user-images/img-55398-20160829144537.PNG"><span style="color: rgb(0, 0, 0);"><strong>Para Garantir seu Acesso ao Treinamento Código do Importador é Muito Simples <br><br>Tenha acesso imediato ao treinamento Código do Importador com apenas 3 passos simples.</strong></span><br><span style="color: rgb(0, 0, 0);"><br></span><span style="color: rgb(0, 0, 0);">Clicar no botão abaixo.<br>Preencher as informações de pagamento 100% seguras<br>Receber nosso email imediato com os dados de login e senha para seu acesso<br><br></span><span style="color: rgb(0, 0, 0);">Siga o 1º passo abaixo:</span><br></h1></div></div></div></section><section data-selector="section" id="botao-cta" style="padding-top: 0px; padding-bottom: 0px; background-color: rgb(255, 255, 255); background-image: none; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll;" src="https://blob.contato.io/machine-user-images/img-55398-20160829144537.PNG"><div class="row"><div class="container"><div class="col-md-8 col-md-offset-2 text-center" data-selector=".col-md-8"></div><div class="col-md-12" data-selector=".col-md-12"><a href="https://go.hotmart.com/X44393475D?ap=5a1a&src=googleADScheckout"
+ class="btn btn-lg btn-block btn-success" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="white-space: normal; border-color: rgb(255, 153, 0); color: rgb(255, 255, 255); border-width: 1.25px; border-radius: 5px; font-size: 34px; background: rgb(255, 153, 0);" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><strong>QUERO ENTRAR PARA O CÓDIGO DO IMPORTADOR AGORA</strong></a></div><div class="col-md-8 col-md-offset-2" style="margin-top: 5%;" data-selector=".col-md-8"></div></div></div></section><section id="intro-countdown" class="cover-bg no-sep text-center bg-color1 dark-bg" data-selector="section" style="padding-top: 0px; padding-bottom: 0px; background-size: auto; background-repeat: no-repeat; background-color: rgb(0, 0, 0); border-bottom: 0px none rgb(255, 255, 255); background-attachment: scroll;" src="https://blob.contato.io/machine-user-images/garantia-7-dias_aas-img-2792977-20200906181342.png" alt="screen"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><div></div><div class="col-md-8 col-md-offset-2" data-selector=".col-md-8"><form role="form" action="/capture" method="post" style="border: none;" data-selector="form"><input type="hidden" id="origin" name="origin" value="https://paginas.digital/f3bce8cbeb/pagina-de-vendas/oferta"><input id="provider" name="provider" type="hidden" value="leadlovers"><input id="list_id" name="list_id" type="hidden" value="470247"><input type="hidden" id="pid" name="pid" value="17457705"><input type="hidden" id="mid" name="mid" value="470247"><input type="hidden" id="id" name="id" value="470247"><div class="col-md-4" data-selector=".col-md-4"></div><input type="hidden" id="formType" name="formType" value="static"></form></div></div></div></div></section><section class="row" id="benefit-right" data-selector="section" style="background-color: rgb(0, 0, 0); padding-top: 150px; padding-bottom: 150px; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll;" alt="screen" src="https://blob.contato.io/machine-user-images/garantia-7-dias_aas-img-2792977-20200906181342.png"><div class="container"><div class="col-md-8 col-md-offset-2" data-selector=".col-md-8"><div class="col-md-5" data-selector=".col-md-5"><br><img class="screen center-block" alt="screen" src="https://blob.contato.io/machine-user-images/garantia-7-dias_aas-img-2792977-20200906181342.png" data-selector="img" style="width: auto; height: auto; border-radius: 0px; border-color: rgb(85, 85, 85); border-style: none; border-width: 1px;"></div><div class="col-md-7" data-selector=".col-md-7"><h2 data-selector="h2" style="color: rgb(255, 255, 255); font-size: 22px; margin-bottom: 30px; margin-top: 0px; font-family: Montserrat; background-color: rgba(0, 0, 0, 0);" class="" alt="screen" src="https://blob.contato.io/machine-user-images/garantia-7-dias_aas-img-2792977-20200906181342.png"><strong>Uma garantia sem igual, seus resultados garantido ou 100% do seu dinheiro de volta</strong></h2><p class="content" data-selector="p" style="color: rgb(255, 255, 255); font-size: 18px; font-family: Montserrat; background-color: rgba(0, 0, 0, 0);" alt="screen" src="https://blob.contato.io/machine-user-images/garantia-7-dias_aas-img-2792977-20200906181342.png">Quero tornar essa decisão simples para você.<br><br>Tenho total certeza que o Código do Importador vai de verdade mudar seu Resultado, com isso em mente eu vou te dar 07 dias de garantias<br></p></div></div></div></section><!-- BENEFITS LIST LEFT BLOCK --><section id="benefits-list-left" class="dark-bg bg-color1" data-selector="section" style="padding-top: 40px; padding-bottom: 20px; border-bottom: 0px none rgb(255, 255, 255); background-image: none; background-attachment: scroll; background-color: rgb(255, 255, 255); background-size: auto; background-repeat: repeat;" alt="screen" src="https://blob.contato.io/machine-user-images/garantia-7-dias_aas-img-2792977-20200906181342.png"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><h2 class="title text-center" data-selector="h2" style="color: rgb(255, 255, 255); font-size: 44px; margin-bottom: 60px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);"><strong><span style="color: rgb(0, 0, 0);">Ainda está com Duvida? A Resposta de todas as perguntas mais frequente a Baixo é SIM!</span></strong></h2></div><div class="col-md-12" data-selector=".col-md-12"><ul class="item-list-left item-list-small item-list"><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><i class="icon icon-check" data-selector=".icon" id="ui-id-15" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">É seguro realizar a compra do curso Código do Importador?</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><i class="icon icon-check" data-selector=".icon" id="ui-id-16" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Eu posso pagar em até 12x no cartão de crédito?</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><i class="icon icon-check" data-selector=".icon" id="ui-id-17" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Você realmente devolve o dinheiro caso eu não goste do curso?</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class="" "=""><i class="icon icon-check" data-selector=".icon" id="ui-id-18" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Terei acesso imediato à uma área exclusiva como aluno do curso?</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon icon-check" data-selector=".icon" id="ui-id-19" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">Ganharei acesso à aulas em vídeo + áudio + texto?</span></h3></li></ul></div></div></div></section><!-- BENEFITS LIST LEFT BLOCK --><section id="benefits-list-left" class="dark-bg bg-color1" data-selector="section" style="padding-top: 50px; padding-bottom: 0px; border-bottom: 0px none rgb(255, 255, 255); background-image: none; background-attachment: scroll; background-color: rgb(255, 255, 255); background-size: auto; background-repeat: repeat;"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"></div><div class="col-md-12" data-selector=".col-md-12" style="background-image: none; background-repeat: repeat; background-size: auto; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); border-radius: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; border-width: 1px; border-style: none;"><ul class="item-list-left item-list-small item-list"><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""><i class="icon icon-check" data-selector=".icon" id="ui-id-15" style="color: rgb(0, 200, 95); font-size: 48px; opacity: 1;"></i><h3 data-selector="h3" style="color: rgb(255, 255, 255); font-size: 26px; margin-bottom: 0px; margin-top: 0px; background-color: rgba(0, 0, 0, 0);" class=""><span style="color: rgb(0, 0, 0);">É verdade que você vive exclusivamente de Importação dos EUA desde 2017?</span></h3></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""></li><li data-selector=".item-list-right li, .item-list-left li, .item-list-center li, .item-list-border li" class=""></li></ul></div></div></div></section><section data-selector="section" id="botao-cta" style="padding-top: 0px; padding-bottom: 0px; background-color: rgb(255, 255, 255); background-image: none; border-bottom: 0px none rgb(85, 85, 85); background-repeat: repeat; background-size: auto; background-attachment: scroll;"><div class="row"><div class="container"><div class="col-md-8 col-md-offset-2 text-center" data-selector=".col-md-8"></div><div class="col-md-12" data-selector=".col-md-12"><a href="https://go.hotmart.com/X44393475D?ap=5a1a&src=googleADScheckout"
+ class="btn btn-lg btn-block btn-success" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="white-space: normal; border-color: rgb(255, 153, 0); color: rgb(255, 255, 255); border-width: 1.25px; border-radius: 5px; font-size: 34px; background: rgb(255, 153, 0);" src="https://blob.contato.io/machine-user-images/img-55398-20160712154859.png"><strong>QUERO ME INSCREVER NO CÓDIGO DO IMPORTADOR AGORA</strong></a></div><div class="col-md-8 col-md-offset-2" style="margin-top: 5%;" data-selector=".col-md-8"></div></div></div></section><section id="intro-countdown" class="cover-bg no-sep text-center bg-color1 dark-bg" data-selector="section" style="padding-top: 0px; padding-bottom: 0px; background-size: auto; background-repeat: no-repeat; background-color: rgb(0, 0, 0); border-bottom: 0px none rgb(255, 255, 255); background-attachment: scroll;"><div class="container"><div class="row"><div class="col-md-12" data-selector=".col-md-12"><div></div><div class="col-md-8 col-md-offset-2" data-selector=".col-md-8"><form role="form" action="/capture" method="post" style="border: none;" data-selector="form"><input type="hidden" id="origin" name="origin" value="https://paginas.digital/f3bce8cbeb/pagina-de-vendas/oferta"><input id="provider" name="provider" type="hidden" value="leadlovers"><input id="list_id" name="list_id" type="hidden" value="470247"><input type="hidden" id="pid" name="pid" value="17457705"><input type="hidden" id="mid" name="mid" value="470247"><input type="hidden" id="id" name="id" value="470247"><div class="col-md-4" data-selector=".col-md-4"></div><input type="hidden" id="formType" name="formType" value="static"></form></div></div></div></div></section><section id="rodape" class="bg-color1 dark-bg" data-selector="section" style="padding-top: 5px; padding-bottom: 5px; background-color: rgb(68, 68, 68); background-image: none; border-bottom: 0px none rgb(255, 255, 255); background-repeat: repeat; background-size: auto; background-attachment: scroll;" src="https://blob.contato.io/machine-user-images/img-55398-20160629143129.png"><div class="container"><div class="row"><div class="col-md-4" data-selector=".col-md-4"></div><div class="col-md-4 text-center" data-selector=".col-md-4"><h3 class="text-center" data-selector="h3" style="color: rgb(255, 255, 255); font-size: 20px; margin-bottom: 10px; margin-top: 20px; background-color: rgba(0, 0, 0, 0);">2020 © Código do Importador - Todos Direitos Reservados<br><br></h3></div><div class="col-md-4" data-selector=".col-md-4"></div></div></div></section><!-- TEXT 1COL BLOCK --><!-- COUNTER BLOCK --></div><!-- /#wrap --><!-- MODALS BEGIN--><div role="dialog" tabindex="-1" aria-hidden="true" id="modalMessage" class="modal fade"><div class="modal-dialog"><div class="modal-content"><button aria-hidden="true" class="close" data-dismiss="modal">×</button><h3 class="modal-title">&nbsp;</h3></div></div></div><!-- MODALS END--><!-- JavaScript --><script src="/builder/elements/scripts/bootstrap.min.js" defer=""></script><script src="/builder/elements/scripts/jquery.validate.min.js" defer=""></script><script src="/builder/elements/scripts/smoothscroll.js" defer=""></script><script src="/builder/elements/scripts/jquery.smooth-scroll.min.js" defer=""></script><script src="/builder/elements/scripts/placeholders.jquery.min.js" defer=""></script><script src="/builder/elements/scripts/jquery.magnific-popup.min.js" defer=""></script><script src="/builder/elements/scripts/jquery.counterup.min.js" defer=""></script><script src="/builder/elements/scripts/waypoints.min.js" defer=""></script><script src="/builder/elements/scripts/video.js" defer=""></script><script src="/builder/elements/scripts/bigvideo.js" defer=""></script><script src="/builder/elements/scripts/animations/wow.min.js" defer=""></script><script src="/builder/elements/scripts/jquery.jCounter-0.1.4.js" defer=""></script><script src="/builder/elements/scripts/jquery.autogrow-textarea.js" defer=""></script><script src="/scripts/globalize/globalize.js" defer=""></script><script src="/scripts/globalize/cultures/globalize.culture.pt-BR.js" defer=""></script><script src="/builder/elements/scripts/custom.js" defer=""></script><script src="/builder/elements/scripts/popup.js" defer=""></script><script src="https://blob.contato.io/machine-files/builder/navdropdown.js" defer=""></script><!--menudropdown--><!--<script src="//blob.contato.io/machine-files/builder/exitpop.js"></script>--><!--<script src="https://blob.contato.io/machine-files/builder/pop-exit.js" defer></script>--><script src="https://blob.contato.io/machine-files/amodels/webflow.js" defer=""></script>
+
+
+<link href="/Content/carousel.v2.css" rel="stylesheet">
+<link href="/Contents/page-advertising?v=OIjdLiP3zDbbwyGzc4HCP78v7aQq62NmROEun6odIEE1" rel="stylesheet" type="text/css" async="">
+<script src="/bundles/globalize?v=Z7dQo83eosj7yLn2TxGEoPKpiluP65U_S4JHNU9GjkM1" type="text/javascript" async=""></script>
+<script src="/bundles/page-views?v=RFS_9pcQpAX3kK36TH6nfMX6edR9IzqGFT5-MduLznc1" type="text/javascript" async=""></script>
+<script type="text/javascript">
+    var _pageID = parseInt('17457705');
+    var _pageType = parseInt('5');
+    var _redirectID = parseInt('0');
+    var _machineID = parseInt('470247');
+    var _chatCode = '';
+    var _leadSource = '';
+    var _leadSCK = '';
+    var _clientLang = 'pt-BR';
+    var _isTest = Boolean(parseInt('0'));
+    var _isMultiCapture = Boolean(parseInt('0'));
+    var _LGPDConsentText = '';
+    var _LGPDLinkTerms = '';
+    var _LGPDUrlTerms = '';
+
+    var _cfIpCountry = '';
+    var _cfHostname = '';
+</script>
+    <script src="/scripts/jquery.form.js" async=""></script>
+    <script src="/bundles/page-capform?v=YR2CM-HOce8pSd9dk7w-4djaXpkuzwQ-3m-3noyyEQ41" type="text/javascript" async=""></script>
+<div class="ue-sidebar-container"></div></body></html>
